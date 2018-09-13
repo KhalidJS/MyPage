@@ -8,6 +8,10 @@ sslify = SSLify(app)
 def index():
     return "Hello World!"
 
+@app.route('/<name>')
+def get_name(name):
+    return 'Hello {}!'.format(name)
+
 @app.route('/data')
 def names():
     data = {"Names": ["Aisha", "Jennifer", "Morten", "Jacob", "John"]}
