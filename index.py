@@ -6,7 +6,7 @@ sslify = SSLify(app)
 
 @app.route('/')
 def index():
-    return "Hello World!"
+    return "Hello There!"
 
 @app.route('/<name>')
 def get_name(name):
