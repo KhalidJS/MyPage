@@ -14,7 +14,7 @@ def get_name(name):
 
 @app.route('/data')
 def names():
-    data = {"Names": ["Aisha", "Jennifer", "Morten", "Jacob", "John"]}
+    data = {"Names": ["Anna", "Joanna", "Thomas", "CK", "John"]}
     return jsonify(data)
 
 if __name__ == '__main__':
