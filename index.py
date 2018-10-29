@@ -10,8 +10,9 @@ def login():
         if request.form.get('Submit-button') == 'submit':
             text = request.form['username']
             password = request.form['password']
-            print("submitted")
-            print("A user with username:" + text + " and with password: ' " + password + " 'has looged in")
+            if text != '' and password != '':
+                print("submitted")
+                print("A user with username:" + text + " and with password: ' " + password + " 'has looged in")
     return render_template("login.html")
 
 
